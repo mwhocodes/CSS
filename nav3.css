@@ -1,0 +1,107 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box; 
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: whitesmoke;
+    height: 100vh;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    width: 95%;
+}
+
+
+.menu-item {
+    display: inline-block;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    min-width: 8em;
+    list-style-type: none;
+    background-color: rgb(65, 65, 65);
+    position: relative;
+    cursor: pointer;
+    border-bottom: 5px solid gray;
+    transition: border-bottom 0.25s ease-in-out, background-color 0.25s linear;
+}
+
+
+.menu-item:hover, .menu-item:focus-within, .menu-item:nth-child(3):hover, .menu-item:nth-child(4):hover, .sub-menu > .menu-item:hover {
+    border-bottom-color: greenyellow;
+    background: rgb(39, 39, 39);
+}
+
+.menu-item:nth-child(3), .menu-item:nth-child(4) {
+    border-bottom-color: orange;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.sub-menu {
+    position: absolute;
+    left: 0;
+    margin-top: 1.5em;
+    display: none;
+    visibility: hidden;
+    /* opacity: 0; */
+}
+
+.menu-item:nth-child(3):hover > .sub-menu, .menu-item:nth-child(4):hover > .sub-menu {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    /* opacity: 1; */
+}
+.sub-menu > .menu-item {
+    border-bottom: 5px solid gray;
+}
+
+@media (max-width: 400px) {
+    .nav {
+        width: 95%;
+        font-size: 16px;
+    }
+    .menu-item {
+        margin: 0.15em;
+    }
+    .menu-item:nth-child(1) {
+        order: 0;
+    }
+
+    .menu-item:nth-child(2) {
+        order: 1;
+    }
+
+    .menu-item:nth-child(3) {
+        order: 3;
+    }
+
+    .menu-item:nth-child(4) {
+        order: 4;
+    }
+    
+    /* Error : k hieu cau lenh chuyen doi order */
+    .menu-item:nth-child(5) { 
+        order: 2;
+    }
+
+}
+
+
+
+

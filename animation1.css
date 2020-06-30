@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+
+.button {
+    display: flex; 
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 300px;
+    background: lightpink;
+    color: white;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    left: 0;
+    top: 0;
+    background: white;
+    position: absolute;
+    height: inherit;
+    width: 10px;
+}
+
+.button:hover:after {
+    content: "ABC";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    animation: mymove ease 2s;
+    
+}
+
+@keyframes mymove {
+    from { width: 10px; left: 0px; color:rgba(0, 245, 245, 0);}
+    to {width: 100%; right: 100px; color: rgba(0, 245, 245, 1)}
+
+}
