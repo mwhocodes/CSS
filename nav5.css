@@ -8,7 +8,6 @@ body {
     background: black;
 }
 
-
 .menu ul {
     list-style-type: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -18,9 +17,9 @@ body {
 
 .menu ul li {
     display: inline-table;
-    height: 40px;
+    height: 70px;
     width: 150px;
-    line-height: 40px;
+    line-height: 70px;
     position: relative;
 }
 
@@ -33,12 +32,28 @@ body {
 .menu ul li a:hover{
     background-color: pink;
     color: plum;
-
 }
+
+.menu > ul > li:after {
+    content: "";
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: whitesmoke;
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: scale(0);
+    transition: transform ease 1s;
+}
+
+.menu > ul > li:hover:after {
+    transform: scale(1);
+}
+
 .menu ul li > .sub-menu {
     display: none;
     position: absolute;
-    bott
 }
 
 .menu ul li:hover > .sub-menu {
