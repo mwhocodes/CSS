@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+}
+
+
+.menu ul {
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background: palevioletred;
+    text-align: center;
+}
+
+.menu ul li {
+    display: inline-table;
+    height: 40px;
+    width: 150px;
+    line-height: 40px;
+    position: relative;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.menu ul li a:hover{
+    background-color: pink;
+    color: plum;
+
+}
+.menu ul li > .sub-menu {
+    display: none;
+    position: absolute;
+    bott
+}
+
+.menu ul li:hover > .sub-menu {
+    display: block;
+}
+
