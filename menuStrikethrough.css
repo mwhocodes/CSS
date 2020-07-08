@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* body {
+  text-align: center;
+}
+
+* body .back {
+  position: fixed;
+  background: url(https://pp.userapi.com/c841122/v841122831/327e/nHt-92F6yc4.jpg) no-repeat top center #efeff1;
+  background-size: cover;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+* body nav {
+  margin-top: 30px;
+}
+
+* body nav ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style-type: none;
+}
+
+* body nav ul li {
+  width: 120px;
+  text-align: center;
+}
+
+* body nav ul li a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+}
+
+* body nav ul li a:after {
+  position: absolute;
+  content: '';
+  height: 3px;
+  background-color: black;
+  width: 100%;
+  left: 0;
+  top: 47%;
+  -webkit-animation: out 0.2s ease-in-out both;
+          animation: out 0.2s ease-in-out both;
+  visibility: hidden;
+}
+
+* body nav ul li a:hover:after {
+  -webkit-animation: in 0.2s ease-in-out both;
+          animation: in 0.2s ease-in-out both;
+  visibility: visible;
+}
+
+@-webkit-keyframes in {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes in {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes out {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes out {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+/*# sourceMappingURL=menuStrikethrough.css.map */
