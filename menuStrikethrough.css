@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:500");
 * {
   padding: 0;
   margin: 0;
@@ -37,10 +38,9 @@
 
 * body nav ul li a {
   color: black;
-  font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Oswald', sans-serif;
   position: relative;
 }
 
@@ -49,53 +49,14 @@
   content: '';
   height: 3px;
   background-color: black;
-  width: 100%;
+  width: 0%;
   left: 0;
   top: 47%;
-  -webkit-animation: out 0.2s ease-in-out both;
-          animation: out 0.2s ease-in-out both;
-  visibility: hidden;
 }
 
 * body nav ul li a:hover:after {
-  -webkit-animation: in 0.2s ease-in-out both;
-          animation: in 0.2s ease-in-out both;
-  visibility: visible;
-}
-
-@-webkit-keyframes in {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes in {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-@-webkit-keyframes out {
-  0% {
-    width: 100%;
-  }
-  100% {
-    width: 0%;
-  }
-}
-
-@keyframes out {
-  0% {
-    width: 100%;
-  }
-  100% {
-    width: 0%;
-  }
+  width: 100%;
+  -webkit-transition: width linear 0.2s;
+  transition: width linear 0.2s;
 }
 /*# sourceMappingURL=menuStrikethrough.css.map */

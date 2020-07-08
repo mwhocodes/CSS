@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
 * {
     padding: 0;
     margin: 0;
@@ -23,47 +24,26 @@
                     text-align: center;
                     a {
                         color: black;
-                        font-weight: bold;
                         text-decoration: none;
                         text-transform: uppercase;
-                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                        font-family: 'Oswald', sans-serif;
                         position: relative;
                         &:after {
                             position: absolute;
                             content: '';
                             height: 3px;
                             background-color: black;
-                            width: 100%;
+                            width: 0%;
                             left: 0;
                             top: 47%;
-                            animation: out 0.2s ease-in-out both;
-                            visibility: hidden;
                         }
                         &:hover:after {
-                            animation: in 0.2s ease-in-out both;
-                            visibility: visible;
+                            width: 100%;
+                            transition: width linear 0.2s;
                         }
                     }
                 }
             }
         }
-    }
-}
-
-@keyframes in {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 100%;
-    }
-}
-
-@keyframes out {
-    0% {
-        width: 100%;
-    }
-    100% {
-        width: 0%;
     }
 }
