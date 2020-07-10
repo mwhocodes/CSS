@@ -1,0 +1,46 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 900px;
+    header {
+        color: white;
+        text-align: center;
+        position: relative;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-attachment: fixed;
+        background: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);        
+        padding: 50px;
+        border-radius: 0 0 85% 85%;
+        text-shadow: 1px 1px 1px pink;
+        h1 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding-top: 30px;
+            font-size: 50px;    
+        }
+        h2 {
+            font-size: medium;
+            padding: 30px;
+        }
+        p {
+            padding: 40px;
+            font-size: small;
+        }
+        button {
+            background-color: white;
+            color: #333;
+            margin-top: 30px;
+            outline: none;
+            border: none;
+            padding: 10px;
+            border-radius: 50px;
+            box-shadow: 0 3px 20px 0 #0000003b;
+        }
+    }
+}
