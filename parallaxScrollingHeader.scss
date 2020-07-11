@@ -1,0 +1,33 @@
+@mixin h($size){
+    text-align: center;
+    font-size: $size;
+    padding: 15px;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    header {
+        position: relative;
+        width: 100%;
+        height: auto;
+        background-image: url(./flower.jpg);
+        background-size: contain;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+        color: white;
+        h1 {
+            @include h(40px);
+        }
+        h2 {
+            @include h(small);
+        }
+    }
+    main {
+        p {
+            text-align: justify;
+            padding: 40px;
+        }
+    }
+}
