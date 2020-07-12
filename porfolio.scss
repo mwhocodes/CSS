@@ -1,11 +1,10 @@
 @import "./font-awesome/scss/font-awesome.scss";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 @import "./josefin-sans/JosefinSans-Bold.ttf";
 $purple: #383e56;
 $coral: #f69e7b;
 $beige: #eedad1;
 $nude: #d4b5b0;
-
 * {
     padding: 0;
     margin: 0;
@@ -18,78 +17,142 @@ body {
     height: auto;
     background-color: $beige;
     float: left;
-    .page {
-        nav {
-            height: 50px;
-            width: inherit;
-            line-height: 50px;
-            h1 {
-                font-family: "JosefinSans-Bold";
-                display: block;
-                padding: 0.5em;
-                color: $purple;
-                float: left;
-            }
-            ul {
-                margin-right: 50px;
-                float: right;
-                li {
-                    display: inline-block;
-                    .sub-menu {
-                        display: none;
-                        position: relative;
-                    }
-                    &:hover .sub-menu {
-                        display: flex;
-                        flex-direction: column;
-                        position: absolute;
-                    }
-                    a {
-                        padding: 0.5em;
-                        display: block;
-                        text-decoration: none;
-                        color: $purple;
-                        &:after {
-                            font-family: FontAwesome;
-                            content: "\f107";
-                            margin-left: 0.5em;
-                        }
-                        &:hover {
-                            color: $coral;
-                            transition: color linear 0.5s;
-                        }
-                    }
-                }
-            }
-        }
-        .media {
-            display: flex;
-            flex-direction: column;
-            position: fixed;
-            right: 0;
-            top: 10em;
-            background-color: $beige;
-            border-radius: 5px 0 0 5px;
-            box-shadow: 0 3px 20px 0 #0000003b;
+}
+
+nav {
+    //height: auto;
+    //line-height: auto;
+    //width: inherit;
+    h1 {
+        font-family: "JosefinSans-Bold";
+        display: block;
+        color: $purple;
+        float: left;
+        padding: 20px;
+    }
+    ul {
+        margin-right: 75px;
+        float: right;
+        li {
+            display: inline-block;
             a {
-                text-align: center;
+                padding: 20px;
                 display: block;
-                padding: 1em;
-                color: #fff;
+                text-decoration: none;
+                color: $purple;
                 &:hover {
-                    box-shadow: 0 3px 20px 0 #0000003b;
                     color: $coral;
                     transition: color linear 0.5s;
-                    &:first-child {
-                        border-radius: 5px 0 0 0;
-                    }
-                    &:last-child {
-                        border-radius: 0 0 0 5px;
-                    }
+                }
+            }
+            .sub-menu {
+                display: none;
+                position: relative;
+                animation: out ease-in 0.5s;
+            }
+            &:hover .sub-menu {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                border-radius: 5px;
+                width: auto;
+                box-shadow: 0 3px 20px 0 #0000003b;
+                animation: in ease-in 0.5s;
+                a {
+                    padding: 20px;
                 }
             }
         }
     }
-
+    .fa-bars {
+        display: none;
+        float: right;
+    }
 }
 
+.media {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 10em;
+    background-color: $beige;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 0 3px 20px 0 #0000003b;
+    a {
+        text-align: center;
+        display: block;
+        padding: 1em;
+        color: $purple;
+        &:hover {
+            box-shadow: 0 3px 20px 0 #0000003b;
+            color: $coral;
+            transition: box-shadow linear 0.5s;
+            transition: color linear 0.5s;
+            &:first-child {
+                border-radius: 5px 0 0 0;
+            }
+            &:last-child {
+                border-radius: 0 0 0 5px;
+            }
+        }
+    }
+}
+
+.dropdown>a:after {
+    font-family: FontAwesome;
+    content: "\f107";
+    margin-left: 0.5em;
+}
+
+@keyframes in {
+    0% {
+        transform: translate(0, 100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0px);
+        opacity: 1;
+    }
+}
+
+// @keyframes out {
+//     0% {
+//         transform: translate(0, 10px);
+//         opacity: 1;
+//     }
+//     100% {
+//         transform: translate(0, 100px);
+//         opacity: 0;
+//     }
+// }
+@media (max-width: 768px) {
+    nav {
+        height: 50px;
+        background-color: $beige;
+        box-shadow: 0 3px 20px 0 #0000003b;
+        ul {
+            display: none;
+        }
+        .fa-bars {
+            display: block;
+            padding: 10px;
+            color: $purple;
+            &:hover {
+                color: $coral;
+                transition: color linear 0.5s;
+            }
+        }
+    }
+    .media {
+        display: flex;
+        flex-direction: row;
+        bottom: 0;
+        top: 90%;
+        width: 100%;
+        justify-content: space-between;
+        a {
+            width: 25%;
+        }
+    }
+}

@@ -3059,35 +3059,44 @@ body {
   float: left;
 }
 
-body .page nav {
-  height: 50px;
-  width: inherit;
-  line-height: 50px;
-}
-
-body .page nav h1 {
+nav h1 {
   font-family: "JosefinSans-Bold";
   display: block;
-  padding: 0.5em;
   color: #383e56;
   float: left;
+  padding: 20px;
 }
 
-body .page nav ul {
-  margin-right: 50px;
+nav ul {
+  margin-right: 75px;
   float: right;
 }
 
-body .page nav ul li {
+nav ul li {
   display: inline-block;
 }
 
-body .page nav ul li .sub-menu {
-  display: none;
-  position: relative;
+nav ul li a {
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+  color: #383e56;
 }
 
-body .page nav ul li:hover .sub-menu {
+nav ul li a:hover {
+  color: #f69e7b;
+  -webkit-transition: color linear 0.5s;
+  transition: color linear 0.5s;
+}
+
+nav ul li .sub-menu {
+  display: none;
+  position: relative;
+  -webkit-animation: out ease-in 0.5s;
+          animation: out ease-in 0.5s;
+}
+
+nav ul li:hover .sub-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3096,28 +3105,24 @@ body .page nav ul li:hover .sub-menu {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
+  border-radius: 5px;
+  width: auto;
+  -webkit-box-shadow: 0 3px 20px 0 #0000003b;
+          box-shadow: 0 3px 20px 0 #0000003b;
+  -webkit-animation: in ease-in 0.5s;
+          animation: in ease-in 0.5s;
 }
 
-body .page nav ul li a {
-  padding: 0.5em;
-  display: block;
-  text-decoration: none;
-  color: #383e56;
+nav ul li:hover .sub-menu a {
+  padding: 20px;
 }
 
-body .page nav ul li a:after {
-  font-family: FontAwesome;
-  content: "\f107";
-  margin-left: 0.5em;
+nav .fa-bars {
+  display: none;
+  float: right;
 }
 
-body .page nav ul li a:hover {
-  color: #f69e7b;
-  -webkit-transition: color linear 0.5s;
-  transition: color linear 0.5s;
-}
-
-body .page .media {
+.media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3134,26 +3139,102 @@ body .page .media {
           box-shadow: 0 3px 20px 0 #0000003b;
 }
 
-body .page .media a {
+.media a {
   text-align: center;
   display: block;
   padding: 1em;
-  color: #fff;
+  color: #383e56;
 }
 
-body .page .media a:hover {
+.media a:hover {
   -webkit-box-shadow: 0 3px 20px 0 #0000003b;
           box-shadow: 0 3px 20px 0 #0000003b;
   color: #f69e7b;
+  -webkit-transition: -webkit-box-shadow linear 0.5s;
+  transition: -webkit-box-shadow linear 0.5s;
+  transition: box-shadow linear 0.5s;
+  transition: box-shadow linear 0.5s, -webkit-box-shadow linear 0.5s;
   -webkit-transition: color linear 0.5s;
   transition: color linear 0.5s;
 }
 
-body .page .media a:hover:first-child {
+.media a:hover:first-child {
   border-radius: 5px 0 0 0;
 }
 
-body .page .media a:hover:last-child {
+.media a:hover:last-child {
   border-radius: 0 0 0 5px;
+}
+
+.dropdown > a:after {
+  font-family: FontAwesome;
+  content: "\f107";
+  margin-left: 0.5em;
+}
+
+@-webkit-keyframes in {
+  0% {
+    -webkit-transform: translate(0, 100px);
+            transform: translate(0, 100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes in {
+  0% {
+    -webkit-transform: translate(0, 100px);
+            transform: translate(0, 100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    height: 50px;
+    background-color: #eedad1;
+    -webkit-box-shadow: 0 3px 20px 0 #0000003b;
+            box-shadow: 0 3px 20px 0 #0000003b;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .fa-bars {
+    display: block;
+    padding: 10px;
+    color: #383e56;
+  }
+  nav .fa-bars:hover {
+    color: #f69e7b;
+    -webkit-transition: color linear 0.5s;
+    transition: color linear 0.5s;
+  }
+  .media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    bottom: 0;
+    top: 90%;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .media a {
+    width: 25%;
+  }
 }
 /*# sourceMappingURL=porfolio.css.map */
