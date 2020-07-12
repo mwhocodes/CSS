@@ -3222,7 +3222,7 @@ nav .fa-bars {
     width: 250px;
     border-radius: 50%;
     background-size: contain;
-    background-image: url(./m.jpg);
+    background-image: url(m.jpg);
     border: #eedad1 15px solid;
     -webkit-box-shadow: 0 3px 20px 0 #0000003b;
     box-shadow: 0 3px 20px 0 #0000003b;
@@ -3244,7 +3244,6 @@ nav .fa-bars {
     font-family: "JosefinSans-Bold";
     padding: 0.5em 0 0.5em 0;
     color: #d4b5b0;
-    /* padding: 0; */
 }
 
 .page header .content p {
