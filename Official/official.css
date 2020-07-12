@@ -3244,6 +3244,7 @@ nav .fa-bars {
     font-family: "JosefinSans-Bold";
     padding: 0.5em 0 0.5em 0;
     color: #d4b5b0;
+    /* padding: 0; */
 }
 
 .page header .content p {
