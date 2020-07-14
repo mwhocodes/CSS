@@ -25,6 +25,7 @@ body {
     height: auto;
     background-color: $beige;
     float: left;
+    color: $purple;
 }
 
 nav {
@@ -35,12 +36,14 @@ nav {
         color: $purple;
         float: left;
         padding: 20px;
+        font-size: 2em;
     }
     ul {
         margin-right: 75px;
         float: right;
+        display: flex;
         li {
-            display: inline-block;
+            list-style-type: none;
             a {
                 padding: 20px;
                 display: block;
@@ -53,7 +56,7 @@ nav {
             }
             .sub-menu {
                 display: none;
-                position: relative;
+                //position: relative;
                 animation: out ease-in 0.5s;
             }
             &:hover .sub-menu {
@@ -65,9 +68,6 @@ nav {
                 background-color: $beige;
                 box-shadow: $boxshadow;
                 animation: in ease-in 0.5s;
-                a {
-                    padding: 20px;
-                }
             }
         }
     }
@@ -134,13 +134,12 @@ nav {
             text-align: justify;
             h2 {
                 font-size: 0.7em;
-                color: $coral;
             }
             h3 {
                 font-size: 2.5em;
                 font-family: $font-stack;
                 padding: 0.5em 0 0.5em 0;
-                color: $nude;
+                color: $purple;
             }
             p {
                 font-size: 0.8em;
@@ -166,7 +165,33 @@ nav {
         background-color: $beige;
         box-shadow: $boxshadow;
         ul {
-            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 50px;
+            right: 0;
+            margin-right: 0;
+            box-shadow: $boxshadow;
+            height: 100%;
+            background-color: $beige;
+            z-index: 1;
+            li {
+                display: block;
+                .sub-menu {
+                    height: unset;
+                    display: block;
+                    top: 0;
+                    position: relative;
+                    box-shadow: none;
+                    animation: none !important;
+                }
+                &:hover .sub-menu {
+                    position: inherit;
+                    box-shadow: none;
+                }
+            }
+            .dropdown>a::after {
+                content: none;
+            }
         }
         .fa-bars {
             display: block;
