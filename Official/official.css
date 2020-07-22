@@ -3248,6 +3248,7 @@ nav .fa-bars {
 }
 
 #link {
+    text-decoration: none;
     font-family: inherit;
     padding: 0.8em 2em;
     border-radius: 5em;
