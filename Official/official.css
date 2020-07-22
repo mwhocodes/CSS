@@ -10,7 +10,7 @@
  * -------------------------- */
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap");
 @font-face {
     font-family: 'FontAwesome';
     src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
@@ -3079,7 +3079,7 @@ nav {
 }
 
 nav h1 {
-    font-family: "JosefinSans-Bold";
+    font-family: "Josefin Sans", sans-serif;
     display: block;
     color: #373833;
     float: left;
@@ -3231,7 +3231,7 @@ nav .fa-bars {
 
 .page1 .content h3 {
     font-size: 3em;
-    font-family: "JosefinSans-Bold";
+    font-family: "Josefin Sans", sans-serif;
     padding: 0.5em 0 0.5em 0;
     color: #FA2742;
 }
@@ -3614,7 +3614,7 @@ img {
 }
 
 .container-personalities p {
-    font-family: "JosefinSans-Bold";
+    font-family: "Josefin Sans", sans-serif;
     color: lightgray;
     font-size: 1.5em;
     padding: 2em;
