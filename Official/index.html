@@ -10,34 +10,40 @@
 </head>
 
 <body>
+
     <nav>
-        <h1 class="logo">mwhocodes.</h1>
+        <h1 class="logo"> <span>m</span>whocodes.</h1>
         <ul class="menu">
-            <li><a href="#">Home</a></li>
+            <li><a href="#hobbies">About Me</a></li>
+            <li><a href="#whatICanDo">Skills</a></li>
             <li class="dropdown"><a href="#">Porfolio</a>
                 <ul class="sub-menu">
-                    <li><a href="#">Porfolio 1</a></li>
-                    <li><a href="#">Porfolio 2</a></li>
-                    <li><a href="#">Porfolio 3</a></li>
+                    <li><a>Porfolio 1</a></li>
+                    <li><a>Porfolio 2</a></li>
+                    <li><a>Porfolio 3</a></li>
                 </ul>
             </li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="#"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+        <a href="#" class="closebtn"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
     </nav>
 
-    <div class="page">
-        <header>
-            <div class="photo"></div>
-            <div class="content">
-                <h2>Web Designer</h2>
-                <h3>Minh Pham</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, quis ipsa incidunt inventore provident quas, maxime ut corrupti unde similique eos? Repudiandae reiciendis id numquam labore, maxime aliquam aut in? Ut debitis, cupiditate
-                    nemo natus, hic nam deserunt, eveniet omnis voluptatem assumenda blanditiis. </p>
+    <!--Page About Me-->
+    <div class="page1">
+        <div class="photo"></div>
+        <div class="content">
+            <h2>Front-end Web Developer</h2>
+            <h3>Minh Pham</h3>
+            <p>Courteous and enthusiastic. I am interested in IT and interface of websites. I recently began to fascinated by web programming, building websites. Invited to join my brother’s start-up team as front-end developer, I gained experience of working
+                in this area. I am keen on developing my skills in this field.
+                <br> <br> For this reason, I am looking for a company willing to offer me a placement among their developers. In return, I would offer my full commitment and be a pleasant and friendly addition to your team.
+                <br> I am therefore currently looking for a job as front-end developer.</p>
+            <div class="home-button">
+                <a id="link" class="btn1" href="#skills">See More</a>
+                <a id="link" class="btn2" href="#contact">Contact</a>
             </div>
-        </header>
+        </div>
     </div>
 
     <div class="media">
@@ -46,6 +52,270 @@
         <a href="#"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a>
         <a href="https://www.facebook.com/min.5674193"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
     </div>
+
+
+    </div>
+    <!--Page Skills-->
+    <div class="page2" id="skills">
+
+        <div class="containerW" id="whatICanDo">
+            <div>
+                <del>What I Can Do</del>
+                <div class="containerWI">
+
+                    <div class="content coding">
+                        <h3>Coding</h3>
+                        <ul>
+                            <li>Transformed a PSD design into live website using HTML, CSS/SASS, Javascript/jQuery</li>
+                            <li>Experienced in using git and github</li>
+                            <li>Knowledge of browser testing Chrome Dev Tool</li>
+                            <li>Implemented new responsive web design</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="content designing">
+                        <h3>Designing</h3>
+                        <ul>
+                            <li>Proficiency in design tools: Adobe Photoshop, Adobe Illustrator</li>
+                            <li>Basic Knowledge of mock-up tools</li>
+                            <li>A strong passion for creativity/design</li>
+                            <li>Collaborating on UI designs and prototypes and conduct usability test, analyzing results with recommendations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="grid-container">
+            <div class="containerSkills">
+                <del>Design Skills</del>
+                <div class="items">
+                    <h5>Illustrator<span>90%</span></h5>
+                    <div class="line illo"></div>
+
+                    <h5>Photoshop<span>80%</span></h5>
+                    <div class="line pts"></div>
+                </div>
+
+            </div>
+
+            <div class="containerSkills">
+                <del>Coding Skills</del>
+
+                <div class="items">
+
+                    <h5>HTML<span>100%</span></h5>
+                    <div class="line HTML"></div>
+
+                    <h5>CSS/ SASS<span>90%</span></h5>
+                    <div class="line CSS"></div>
+
+                    <h5>JavaScript/ jQuery<span>80%</span></h5>
+                    <div class="line js"></div>
+
+                </div>
+            </div>
+
+            <div class="containerSkills">
+                <del>Languages</del>
+                <div class="items">
+
+                    <h5>English<span>90%</span></h5>
+                    <div class="line english"></div>
+
+                    <h5>French<span>70%</span></h5>
+                    <div class="line french"></div>
+
+                    <h5>Vietnamese<span>100%</span></h5>
+                    <div class="line vietnamese"></div>
+                </div>
+            </div>
+
+            <div class="containerSkills">
+                <del>Others</del>
+                <div class="items">
+
+                    <h5>Github<span>80%</span></h5>
+                    <div class="line github"></div>
+
+                    <h5>VScode<span>100%</span></h5>
+                    <div class="line slack"></div>
+
+                    <h5>Trello/ Scrum/ Slack<span>100%</span></h5>
+                    <div class="line trello"></div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!--Resume-->
+    <div class="page3" id="resume">
+        <div class="grid-container">
+            <div>
+                <del>Education</del>
+                <div class="containerResume edu">
+                    <div class="item">
+                        <h6> <span>2009</span> University of Pham Van Dong</h6>
+                        <h3>Information Technology</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, minus?</p>
+                    </div>
+
+                    <div class="item">
+                        <h6> <span>2011-2015</span> DN University of Foreign Language</h6>
+                        <h3>French & English</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, minus?</p>
+                    </div>
+                </div>
+
+                <del>Certifications</del>
+                <div class="containerResume">
+                    <div class="item">
+                        <ul class="star">
+                            <li>
+                                TESOL certification (Teachers of English to Speakers of Other Languages)
+                            </li>
+
+                            <li> Certificate of French Language Proficiency B2 (CEFR)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+                <del>Experience</del>
+                <div class="containerResume">
+
+                    <div class="item">
+                        <h6> <span>2019-Current</span> IEC</h6>
+                        <h3>ESL teacher</h3>
+                        <ul class="circle">
+                            <li>Teaching English to students aged 1-6 years old</li>
+                            <li>Helping students learn to pronounce words through TPR method</li>
+                            <li>Preparing classes using provided materials and personal teaching materials</li>
+                            <li>Focusing on improving students' listening and speaking skills</li>
+                            <li>Creating all materials, warm-up activities, quizzes, situations and stories</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h6> <span>2017-2019</span> Ylinkee</h6>
+                        <h3>Content Writer/ Designer</h3>
+                        <ul class="circle">
+                            <li>Translated entertainment contents from English to French</li>
+                            <li>Edited contents on Facebook page products, website</li>
+                            <li>Contributed and created ideas on the Facebook page</li>
+                            <li>Designed photos to create ads, logos, landing pages</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h6> <span>2016-2017</span> Hoi An Express</h6>
+                        <h3>Sale Executive</h3>
+                        <ul class="circle">
+                            <li>Provided information relating to tourism, sold tours and other services </li>
+                            <li>Gathered and recorded information from customers & handled via email</li>
+                            <li>Incorporated with other departments to organize services to customers</li>
+                            <li>Followed up services and resolved other issues and complaints from customers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--Hobbies-->
+    <div id="hobbies" class="hobbies">
+        <del>Hobbies</del>
+
+        <div class="container-hobbies">
+            <div class="item">
+                <img src="./song.svg" alt="music">
+                <p>Music</p>
+            </div>
+            <div class="item">
+                <img src="./code.svg" alt="coding">
+                <p>Coding</p>
+
+            </div>
+            <div class="item">
+                <img src="./drawing.svg" alt="painting">
+                <p>Painting</p>
+
+            </div>
+            <div class="item">
+                <img src="./movies.svg" alt="movie">
+                <p>Movie</p>
+
+            </div>
+            <div class="item">
+                <img src="./yoga-pose.svg" alt="fitness">
+                <p>Fitness</p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--Personalities-->
+
+    <div class="personalities">
+        <del>Personalities</del>
+        <div class="container-personalities">
+            <p data-item="selfTaught">selfTaught</p>
+            <div class="dot"></div>
+            <p data-item="loveOfLearning">loveOfLearning</p>
+            <div class="dot"></div>
+
+            <p data-item="embraceChanges">embraceChanges</p>
+            <div class="dot"></div>
+
+            <p data-item="crushingHumility">crushingHumility</p>
+            <div class="dot"></div>
+
+            <p data-item="highlyInquisitive">highlyInquisitive</p>
+        </div>
+    </div>
+    <!--Contact-->
+
+    <div id="contact" class="containerContact">
+        <div class="address">
+            <table>
+                <tr>
+                    <th><i class="fa fa-mobile" aria-hidden="true"></i></th>
+                    <th class="text">+84-915-678-4193</th>
+                </tr>
+                <tr>
+                    <th><i class="fa fa-map-marker" aria-hidden="true"></i></th>
+                    <th class="text">101 Nguyen Binh Khiem, Quang Ngai</th>
+                </tr>
+                <tr>
+                    <th><i class="fa fa-envelope" aria-hidden="true"></i></th>
+                    <th class="text">phamanhminh4193@gmail.com</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="contact">
+            <del id="question">How Can I Help You ?</del>
+            <div class="form">
+                <div class="input">
+                    <input type="text" name="fullName" placeholder="Full Name">
+                    <input type="text" name="emailAddress" placeholder="Email Address">
+                    <input type="text" name="subject" placeholder="Subject">
+                    <a id="link" class="btn1" type="submit">Send Message</a>
+                </div>
+                <div class="textarea">
+                    <textarea name="message" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
