@@ -3773,6 +3773,7 @@ table .text {
     }
     nav ul li .sub-menu {
         height: unset;
+        width: 150px;
         display: block;
         top: 0;
         position: relative;
