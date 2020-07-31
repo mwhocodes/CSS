@@ -1,5 +1,5 @@
 $(document).ready(function(){
     $(".fa-bars").click(function(){
-        $(".menu").toggle(300);
+        $(".menu").fadeToggle(300);
     })
 })
