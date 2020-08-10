@@ -1,0 +1,86 @@
+$orange: #d94e09;
+.container {
+    margin: auto;
+}
+
+.btn {
+    background-color: $orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0em 3em;
+    margin: 3em auto;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.text {
+    color: white;
+}
+
+.circle {
+    background-color: #ffffff;
+    color: #000000;
+    height: 60px;
+    width: 60px;
+    line-height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 5px double $orange;
+    position: relative;
+}
+
+.arrow {
+    font-size: 2em;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+h4 {
+    position: relative;
+    padding-bottom: 1em;
+     :after {
+        content: '';
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        background-color: black;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.box {
+    background-color: #f1f1f1;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+.bullet:before {
+    content: "\2022";
+    color: $orange;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 1em;
+}
+
+h5 {
+    color: $orange;
+    padding: 0.5em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .btn {
+        padding: 0 1em !important;
+    }
+}
