@@ -13,32 +13,43 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0em 3em;
+  width: 516px;
+  height: 85px;
   margin: 3em auto;
+  border-radius: 10px;
   -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
           box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
+.btn:hover {
+  background-color: #c94808;
+}
+
 .text {
+  font-size: 30px;
   color: white;
+  line-height: 87px;
+  font-weight: 500;
+}
+
+.arrow {
+  font-size: 3em;
+  margin-left: 3px;
+  color: #ffffff;
 }
 
 .circle {
   background-color: #ffffff;
   color: #000000;
-  height: 60px;
-  width: 60px;
-  line-height: 50px;
+  font-size: 23px;
+  font-weight: 700;
+  height: 61px;
+  width: 61px;
+  line-height: 47px;
   margin-right: 10px;
   border-radius: 50%;
-  border: 5px double #d94e09;
+  border: 7px double #d94e09;
   position: relative;
-}
-
-.arrow {
-  font-size: 2em;
-  margin-left: 10px;
-  color: #ffffff;
 }
 
 h4 {
@@ -86,9 +97,18 @@ li {
   margin: 0 auto;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 667px) {
   .btn {
-    padding: 0 1em !important;
+    font-size: 20px;
+    width: unset;
+    height: unset;
+  }
+  .arrow {
+    font-size: 2em !important;
+  }
+  .text {
+    line-height: unset;
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
